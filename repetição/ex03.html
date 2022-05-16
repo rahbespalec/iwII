@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+<body>
+<script>
+    var a = Number(prompt('Insira o número de habitantes do país "a"'))
+    var tha = Number(prompt('Insira a taxa de crescimento populacional'))
+    var b = Number(prompt('Insira o número de habitantes do país "b"'))
+    var thb = Number(prompt('Insira a taxa de crescimento populacional'))
+    cont = 0
+
+    if(b > a){
+    while (b > a){
+        a = a + (a * (tha/100))
+        b = b + (b * (thb/100))
+        cont ++
+
+    if(b < a){
+        alert(`Será necessário ${cont} anos para que a população do país "a" ULTRAPASSE ou IGUALE a população do país "b"`) 
+
+        var a = Number(prompt('DIGITE o número de habitantes do país "a"'))
+        var tha = Number(prompt('DIGITE a taxa de crescimento populacional'))
+        var b = Number(prompt('DIGITE o número de habitantes do país "b"'))
+        var thb = Number(prompt('DIGITE a taxa de crescimento populacional'))
+        cont = 0
+            }
+        }
+    }
+    else{
+        while (a > b){
+        a =a + (a * (tha/100))
+        B = B + (B * (thb/100))
+        cont ++
+
+        if(A < b){
+            alert(`Será necessário ${cont} anos para que a população do país "b" ultapasse ou iguale a população do país "a"`) 
+
+            var a = Number(prompt('Insira o número de habitantes do país "a"'))
+            var tha = Number(prompt('Insira a taxa de crescimento populacional'))
+            var b = Number(prompt('Insira o número de habitantes do país "b"'))
+            var thb = Number(prompt('Insira a taxa de crescimento populacional'))
+            cont = 0
+            }
+        }   
+    }
+
+</script>
+</body>
+</html>
