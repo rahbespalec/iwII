@@ -1,0 +1,55 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+<body>
+    
+<script>
+    var a = Number(prompt('Digite um número para A'))
+    var b = Number(prompt('Digite um número para B'))
+    var c = Number(prompt('Digite um número para C'))
+    console.log('a --',a)
+    console.log('b --',b)
+    console.log('c --',c)
+
+    var delta = Math.pow(b, 2) - 4 * a * c
+    console.log('delta --',delta)
+
+    if(delta<0){
+        console.log('não existem raízes')
+        alert('Como o delta é igual a zero, não existem raízes')
+    }
+
+    else{
+        if(delta==0){
+            var resultado = raizes(b, delta, a)
+            console.log('x1',resultado[0])
+            console.log('x2',resultado[1])
+            alert(`Números: ${a}, ${b} e ${c} \n Delta: ${delta} \n Resultados: X' = ${resultado[0]}; X" = ${resultado[1]}`)
+        }
+        else{
+            var resultado = raizes(b, delta, a)
+            console.log('x1',resultado[0])
+            console.log('x2',resultado[1])
+            alert(`Números: ${a}, ${b} e ${c} \n Delta: ${delta} \n Resultados: X' = ${resultado[0]}; X" = ${resultado[1]}`)
+        }
+    }
+
+    function raizes(b, delta, a){
+        //calcular as raizes de 1 e 2
+        var equacao1 = (-1 * b + Math.sqrt(delta))/2 * a
+        var equacao2 = (-1 * b - Math.sqrt(delta))/2 * a
+        // console.log('x1 --',equacao1)
+        // console.log('x2 --',equacao2)
+        var vetor =[equacao1, equacao2]
+        return vetor
+    }
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+<body>
+    
+<script>
+    
+    var nota1 = Number(prompt('Digite sua primeira nota:'))
+    var nota2 = Number(prompt('Digite sua segunda nota:'))
+    var total = (nota1 + nota2)/2
+
+    if((total >= 0) && (total <= 4)){
+        alert(`Notas: ${nota1} e ${nota2} \nMédia: ${total} \nNota Final: E \nReprovado`)
+    }
+
+    if((total > 4) && (total <= 6)){
+        alert(`Notas: ${nota1} e ${nota2} \nMédia: ${total} \nNota Final: D \nReprovado`)
+    }
+
+    if((total > 6) && (total <= 7.5)){
+        alert(`Notas: ${nota1} e ${nota2} \nMédia: ${total} \nNota Final: C\nAprovado`)
+    }
+
+    if((total > 7.5) && (total <= 9)){
+        alert(`Notas: ${nota1} e ${nota2} \nMédia: ${total} \nNota Final: B \nAprovado`)
+    }
+
+    if((total > 9) && (total <= 10)){
+        alert(`Notas: ${nota1} e ${nota2} \nMédia: ${total} \nNota final: A \nAprovado`)
+    }
+
+</script>
+</body>
+</html>
